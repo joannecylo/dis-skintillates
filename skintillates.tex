@@ -1,23 +1,38 @@
 \documentclass{sigchi}
-\pagenumbering{arabic}
-\usepackage{balance}  
-\usepackage{graphics}
-\usepackage{times}
-\usepackage{mathtools}
-\usepackage{amssymb}
-\usepackage{url}
-\usepackage{wrapfig}
-\usepackage{lipsum}
-\usepackage{setspace}
-\usepackage{helvet}
 
+% Use this command to override the default ACM copyright statement (e.g. for preprints). 
+% Consult the conference website for the camera-ready copyright statement.
+
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+% \toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is  granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+
+% Arabic page numbers for submission. 
+% Remove this line to eliminate page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage{url}      % llt: nicely formatted URLs
+\usepackage{siunitx}
+
+% llt: Define a global style for URLs, rather that the default one
 \makeatletter
 \def\url@leostyle{%
   \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
 \makeatother
 \urlstyle{leo}
 
-% Page size.
+
+% To make various LaTeX processors do the right thing with page size.
 \def\pprw{8.5in}
 \def\pprh{11in}
 \special{papersize=\pprw,\pprh}
@@ -26,12 +41,12 @@
 \setlength{\pdfpagewidth}{\pprw}
 \setlength{\pdfpageheight}{\pprh}
 
-\input{macros}
-\renewcommand{\labelitemi}{{\tiny$\bullet$}}
-
+% Make sure hyperref comes last of your loaded packages, 
+% to give it a fighting chance of not being over-written, 
+% since its job is to redefine many LaTeX commands.
 \usepackage[pdftex]{hyperref}
 \hypersetup{
-pdftitle={SIGCHI Conference Proceedings Format},
+pdftitle={Skintillates: Towards Epidermal Interactions},
 pdfauthor={LaTeX},
 pdfkeywords={SIGCHI, proceedings, archival format},
 bookmarksnumbered,
@@ -44,113 +59,230 @@ urlcolor=black,
 breaklinks=true,
 }
 
-% \toappear{\scriptsize Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
-% {\emph{C\&C 2015}}, June 22--25, 2015, Glasgow, United Kingdom. \\
-% Copyright \copyright~2015 ACM 978-1-4503-3598-0/15/06\ ...\$15.00. \\
-% DOI: http://dx.doi.org/10.1145/2757226.2757235}
-% \clubpenalty=10000 
-% \widowpenalty = 10000
-
-\toappear{To be submitted for review to CHI 2016.}
-% \toappear{
-% Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
-% {\emph{C\&C '15}}, June 22--25, 2015, Glasgow, United Kingdom. \\
-% Â© 2015 ACM. ISBN 978-1-4503-3598-0/15/06\dots\$15.00 \\ 
-% DOI: http://dx.doi.org/10.1145/2757226.2757235}
-
-
-% Permission to make digital or hard copies of all or part of this work for personal or classroom use is  granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
-% {\emph{C\&C'15}}, June 22--25, 2015, Glasgow, United Kingdom. \\
-% Copyright is held by the owner/author(s). Publication rights licensed to ACM. 
-% \\ACM 878-1-4501-3305-4/15/01 ISBN/14/04...\$15.00. \\
-% http://dx.doi.org/10.1145/2677199.2680604}
-
-
 % create a shortcut to typeset table headings
 \newcommand\tabhead[1]{\small\textbf{#1}}
-\newcommand\group[1]{\textit{#1}}
-% \newcommand\codeword[1]{\textt{#1}}
-\newcommand*{\codeword}[1]{\textbf{\texttt{{{\fontfamily{cmss}\selectfont{#1}}}}}}
-% \newcommand\codeword[1]{\texttt\small{{#1}}}
-% \newcommand\quoted[1]{\textit{#1}}
-\newcommand*{\quoted}[1]{{\small{\fontfamily{cmss}\selectfont{#1}}}}
+\newcommand{\ignore}[1]{}
 
-\newcommand\name{Ellustrate}
-\newcommand\namesp{Ellustrate }
-\newenvironment{myquote}{\list{}{\leftmargin=0.01\textwidth \rightmargin=0.01\textwidth}\item[]}{\endlist}
-% \newcommand\internal{\textbf{Bones}}
-% \newcommand\internalsp{\textbf{Bones} }
-% \newcommand\external{\textbf{Skin}}
-% \newcommand\externalsp{\textbf{Skin} }
 
-\newcommand*{\layer}[1]{{\textbf{\small{\fontfamily{cmss}\selectfont{#1}}}}}
-\newcommand*{\participant}[1]{{\textbf{\small{\fontfamily{cmss}\selectfont{#1}}}}}
-
-% End of preamble.
-
+% End of preamble. Here it comes the document.
 \begin{document}
 
-\title{
-\setstretch{2} \ttlfnt
-Ellustrate: Making Pretty Circuits
+\title{Skintillates: Towards Epidermal Interactions}
+
+\numberofauthors{3}
+\author{
+  \alignauthor 1st Author Name\\
+    \affaddr{Affiliation}\\
+    \affaddr{Address}\\
+    \email{e-mail address}\\
+    \affaddr{Optional phone number}
+  \alignauthor 2nd Author Name\\
+    \affaddr{Affiliation}\\
+    \affaddr{Address}\\
+    \email{e-mail address}\\
+    \affaddr{Optional phone number}    
+  \alignauthor 3rd Author Name\\
+    \affaddr{Affiliation}\\
+    \affaddr{Address}\\
+    \email{e-mail address}\\
+    \affaddr{Optional phone number}
 }
-
-\iftoggle{anonymous}{
-  %if anonymous
-  \numberofauthors{1}
-  \author{
-  \alignauthor Anonymous for Submission\\
-    \affaddr{...}\\
-    \affaddr{...}\\
-    \email{...}\\
-  }
-}{
-\numberofauthors{1}
-  \author{
-    \alignauthor Anonymous for Submission\\
-    \affaddr{...}\\
-    \affaddr{...}\\
-    \email{...}\\
-    }
-}
-
-
-% BANNER
-% \teaser {
-%   \vspace{-14pt}
-%   \centering
-%     \includegraphics[width=\linewidth]{figures/teaser.pdf}
-%     % \caption[]{  
-%     \caption{a) A earring design formed with Proxy jigs, b) digital fabrication proxies as jigs, stencils, and schematics, c) a forged design with weighted lines, d) a weaved pendant. }
-% \label{fig:teaser}
-% \vspace{-8pt}
-% }
- 
-
 
 \maketitle
 
-
 \begin{abstract}
-
+Beyond phones, watches, and activity tracking devices, a new ecosystem of functional and fashionable wearable technologies can easily, safely, and economically be designed, prototyped, and integrated directly on the skin. Skintillates is a wearable technology that mimics tattoo - the oldest and most commonly used on-skin display in human culture. We demonstrate that by fabricating sensors and thin electronics on temporary tattoo paper, a wide array of displays and sensors can be created. Just like the non-functionalized temporary tattoo often worn by children to adults alike, the Skintillates devices flex naturally with the user's skin. Our simple fabrication technique also enables users to freely design and print with full range of colors to customize for their specific applications. In addition to demonstrating the technical capability of Skintillates in the application examples, we also briefly explore how Skintillates, an electronic augmented tattoo, can serve as a platform for the combination of public and private body art and displayed data. (needs trim) 
 \end{abstract}
 
 \keywords{
-  digital fabrication; creativity support tools; design; DIY; 
+  Fabrications; wearable  \newline
 }
-\classification{H.5.m. Information interfaces and presentation]: User Interfaces - Interaction Styles}
-% \category{H.5.m.}{Information Interfaces and Presentation (e.g. HCI)}{Miscellaneous}
-\category{D.2.2}{Design Tools and Techniques}{User interfaces}
 
+\category{H.5.m.}{Information Interfaces and Presentation (e.g. HCI)}{Miscellaneous}
 
 \section{Introduction}
-\jlo{Hello, I am Joanne.} asdlkfha;lksdhfasldhf;lhasl;dfkhl;
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\columnwidth]{figures/Figure1}
+\caption{Skintillates is a tattoo interactive platform that can be fabricated with an accessible process.}
+\label{fig:figure1}
+\end{figure}
+Everyday, we interact with the world through our skin. The human skin senses important events that happen closest to us, and serves as an expressive medium when adorned with tattoo art. In this paper, we present Skintillates, a class of temporary tattoo epidermal wearable interactive devices. Skintillate devices presented in this paper include electronic tattoo as passive and active on-skin display, capacitive sensors for mobile devices electronic instrument control and strain gauge for posture detection. Similar to traditional tattoo, Skintillates can be customized to be a variety of different sizes and colors to fit the user’s intended functions. Moreover, we demonstrate an accessible fabrication method that involves all commercially available materials and easy-to-obtain equipment. 
+Skintillates is inspired by a line of research in micron-thin epidermal electronics pioneered by material scientists. Since these epidermal electronics directly contacts the skin, they can be made into extremely accurate, yet comfortable, sensors. However, due to their intricate fabrication method, epidermal sensors remain to be a device mainly used in specialized medical and military applications. However, there is a clear need in the field of human-computer interactions for on-skin wearable electronics to enable a natural and always-available interactions with the electronics and data around us [cites]. In addition to giving commands using a wearable device, Skintillates can also serve as a programmable/addressable LED temporary tattoo display. 
+
+Temporary tattoo is a natural platform for on-skin wearable. With the rich history of tattoo within the human culture, we can learn a few things from tattoos about some design parameters of on-skin wearable devices: 
+
+\subsubsection{Public and private:}
+Just as tattoos can be worn as a display to the public, they can also serve as a private intimate body art as well. Depending on the user’s outfit, tattoos on different body parts can interchange from a private display to a public one. Skintillates can be designed with these principles in mind, where the size, shape, colors, and luminosity can be tailored to the specific use cases. In the examples presented in this paper, we explored a few interaction scenarios where Skintillates serve as a public display or private message to the user. 
+
+\subsubsection{Aesthetic and Electronic Customizability:}
+Wearers of tattoos, both permanent and temporary ones, expect control of the aesthetic of tattoo because body arts send a strong message about the wearer. The message carried by a large vividly colored dragon tattoo and the message carried by a small white inside-arm tattoo is vastly different. This is a type of control that most users have been forced to give up in most wearable devices – buyers can choose the color of the FitBit, but for the most part the shape and functions of the device is predetermined. Skintillates explores the benefits of customizing the aesthetic and electronic functions, separately and individually, in an on-skin wearable device. 
+
+\subsubsection{Biocompatibility:}
+The biocompatibility of on-skin wearable is extremely complicated and nuanced. For this reason, we used materials that have been safely used on the human skin before. To minimize the possibility of negative skin-reaction to Skintillates, we used commercially available temporary tattoo paper as the substrate, and a medical electrode grade silver screen-printing ink as the conductive material for the circuitry. 
+
+\section{Related Work}
+\subsection{Optical Projection}
+\subsection{polymer On-skin Overlay}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\columnwidth]{figures/Figure2_1}
+\caption{Comparison between polymeric and epidermal werable. a) A micrograph of the cross section of a \SI{36}{\micro\metre}-thick Skintillates device compared to a cross section of a piece of hair.}
+\label{fig:figure2}
+\end{figure}
+
+\subsection{Epidermal Electronics}
+Epidermal work done by John Rogers 
+the fabrication process of epidermal electronics require expensive cleanroom equipment – epidermal electronics generally involve extremely fine gold traces and electrodes (less than 1um) that are capable of resolving EEG signals with amplitude of 0.5V.
+temporary tattoo substrate was explored as a decorative covering in some of the work, but it was not used as the substrate for the electronics. 
+- PVA substrate as temporary support
+- Skintillates is inspired by…
 
 
+\section{Fabrication}
+\subsection{Material selection}
+\begin{enumerate}
+  \item The substrate has to be easily customizable to enable artistic expression with the temporary tattoo
+  \item The electronic has to be conductive enough to support basic functions. 
+  \item The tattoo must be easily applicable, stay on skin for a reasonable amount of time, and removable.
+\end{enumerate}
+
+Similar to epidermal electronics, we aimed for an integrated-with-skin tattoo aesthetic in Skintiallates. The amplitude of signals that we expect Skintillates to be used with for HCI applications are much larger than the signal strength of what epidermal electronics experiences (down to 500uV). Additionally, the flexibility of epidermal electronics enabled by the ultra-thin geometry that attaches to skin without substrate backing comes at the expense of complicated fabrication method and equipment. 
+
+With the aforementioned considerations in mind, we chose to directly screenprint the circuits and electronics onto commercially available inkjet printable temporary tattoo papers. The silver ink used in this study was CreativeMaterials 118-38 Screen-printable ink, and the temporary tattoo substrates used is Silhouette Inkjet Printable tattoo paper. Although the Skintillates devices, with conductive ink printed on top of temporary tattoo papers, are not as thin as epidermal electronics, it enables Makers to prototype on-skin interactive wearables with a much more accessible process. (Temporary tattoo papers are commonly used among crafters, it is therefore reasonable to assume that consumers find it acceptable to wear on skin although it’s not as conformable to skin as epidermal electronics.)(reword) Makers can inkjet print their own custom tattoo design, and screenprint the electronics with relatively inexpensive equipment. Screenprinting has also been shown to be able to create extremely fine and complicated electronic structures, and therefore this proposed fabrication method can be adapted by entry level to advanced Makers. 
+
+Due to the need to make a large number of Skintillates display and sensors in this project, we fabricated almost all of the Skintillates devices by screen-printing conductive ink. We have successfully created these devices with conductive inkjet printing and conductive pens, but we will focus on the screen-print method in this paper. 
+
+\subsection{Fabrication Process}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.9\columnwidth]{figures/Figure3}
+\caption{An illustration of the different layers of a basic Skintillate device.}
+\label{fig:figure3}
+\end{figure}
+
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/Figure4}
+\caption{With Caption Below, be sure to have a good resolution image
+  (see item D within the preparation instructions).}
+\label{fig:figure4}
+\end{figure*}
+
+\begin{enumerate}
+  \item Design an art layer (nonconductive) with a graphic design tool of choice. Design the circuit and/or sensors to be screen-printed as the conductive layer.
+  \item Use an inkjet printer to print the art layer design onto the tattoo substrate (still attached to the paper backing). 
+  \item Cut a negative mask with vinyl cutter for screen-printing the conductive layer. 
+  \item Apply vinyl mask onto the silkscreen. 
+  \item Screen-print the circuit and/or sensors using the silver screen-printing ink.
+  \item Let the ink dry in ambient temperature for 3-4 hours or 10 minutes in an oven at 100$^{\circ}$C. 
+  \item Mount electronics onto the circuit using z-conductive tape at appropriate locations if needed.   
+\end{enumerate}
+LED's and resistors of the surface mount 0603 package, which has thickness of  \SI{500}{\micro\metre}, was used throughout this study to minimize increase in thickness in locations where electronics are mounted. Increased complexity in electrical functionality and aesthetic design could be achieved by using deviations of this basic fabrication method. The specific changes will be discussed in the application section. 
+
+\subsection{Designing the Visual Appearance of Skintillates}
+explain how covering/or not the conductive layer
+
+\section{Example Applications}
+\subsection{On-skin Display}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\columnwidth]{figures/Figure5}
+\caption{Example of Skintillates tattoo displays}
+\label{fig:figure5}
+\end{figure}
+One of the most important aspect of wearing tattoos, either temporary or permanent, is to express personal identity. Skintillates aims to augment the self-expression of tattoo artwork with electronics. In this paper, we present a few examples that we imagine Skintillates to make a useful tattoo display. In Figure 5, we show a few examples of decorative Skintilaltes public and private displays. Figure 5a shows a simple dragon tattoo with red LED eyes. The Skintillate dragon tattoo is electrically connected to the watch, and could potentially serve as a point-light display for a smart watch. Figure 5b demonstrates a back tattoo with LED’s that flash with music. The tattoo is controlled by an Arduino hidden under the wearer’s clothing. In this example, we also briefly explored the aesthetic of electronically functionally components on the tattoo. The power pads, which are traditionally circular or square in shape in printed circuit boards, are designed to look like wings to fit with the aesthetic of the art layer of the tattoo. 
+In Figure 5c-d, we investigated the potential of using Skintillates as a private wearable display for intimate bio-data. We downloaded two sets of publically available test electrocardiogram (ECG) signals from PhysioNet to simulate the heartbeats from two people. In real-life setting, the Skintillates bio-data display can be interfaced with many of the biomonitoring wearable devices in the market to obtain the data. The LED’s are programmed to blink as the signal strength reaches a certain amplitude (Figure 5c). In Figure 5d, the user wore the Skintillate display under a jacket, which he/she can lift and glance at the private display when desired. 
+
+\subsection{Multi-layer Display}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\columnwidth]{figures/Figure6}
+\caption{Multilayer Display}
+\label{fig:figure6}
+\end{figure}
+Multilayer devices can be fabricated for aesthetic or electronic purposes. (Figure x) In printed circuit board design, multiple layers are often needed to achieve desired form and function. Epidermal electronics have also explored using multilayer device to support more complicated function. In arts practices, layers are often used as a mean to create dimensions (need citing). In order to fully explore combining arts and electronics on a wearable device, the Skintillates fabrication should be able to support electronic function and aesthetically attractive multi-layer devices.  
+
+\subsection{Sensing}
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/Figure7}
+\caption{Capacitive touch sensing}
+\label{fig:figure7}
+\end{figure*}
+Advanced sensing, including capacitive sensing, using epidermal devices is well-established. In many research studies, various algorithms, data processing methods, and grounding schemes are utilized to overcome any technical difficulties usually associated with wearable sensing. In this paper, we would like to present Skintillates sensors as devices that can be used with interfacing electronics popular amongst makers, the MakeyMakey and the Arduino. Through careful material selections, we can achieve sensitivity suitable for common interactive applications. As mentioned in the Fabrication section, the silver screen printing ink (or most of the silver ink on the market) is very conductive (0.5$\Omega/\square$). The high conductivity is important in resistive switch design, where the touched surface needs to be conductive enough to close the switch; it is also pertinent in capacitor design, where the availability of charge directly affects the sensitivity of the capacitive button (Gauss’s law=$\frac{\sigma}{\epsilon}$). In the following sections, we will go through a few sensing examples using the Skintillates devices. 
+
+\subsection {Capacitive touch}
+
+Capacitive sensing is ubiquitous in interaction design - from sensing gestures to sensing direct touch, the change in electric field carries rich information about the space around us. In this paper, we present Skintillates capacitive buttons that can be used to control mobile devices. To ensure reliable performance of the capacitive sensor, both the electronic filtering and the physical device insulation have be carefully designed. The raw data of the capacitive sensor is shown in Fig xa, from which the signal is then processed and filtered by the Adafruit Capacitive Touch Sensor Breakout MPR121 connected to an Arduino Uno. To insulate the capacitive sensor against the skin where it is attached, we modify the fabrication steps slightly by adding two layers of temporary tattoo substrates on top of the conductive electrodes. (make figures to describe this)
+\subsection {On-skin Resistive Sensor}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\columnwidth]{figures/Figure8}
+\caption{Example of Skintillates tattoo displays}
+\label{fig:figure8}
+\end{figure}
+
+\subsection {Strain Gauge}
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/Figure9}
+\caption{Capacitive touch sensing}
+\label{fig:figure9}
+\end{figure*}
+\section {User Study and Public Exhibition}
+In an user study, we asked ten voluntary participants (Fig x, mean age 29.7) to each wear a Skintillates LED display powered with a 3.3V coin cell battery and a resistive sensor on a body location of their choice for the duration of a work day, which ranges from 6 to 10 hours. During which they performed their normal work functions, which mostly includes office activities such as typing, writing, and manipulating light machinery. At the end of the study, participants were asked to rate the wearing comfort of the Skintillates display and imagine the difference personal uses of Skintillates. The Skintillates displays and resistive sensors were all tested at the end of the work day to assess its durability. 
+
+Participants were asked to rate the wearing comfort of the Skintillate display with and without consideration of the battery connection (i.e. copper tape connected to the battery). Without considering the battery connection, the wearing comfort of the Skintillates display and resistive sensor have an average rating of 8.21 and 8.76 out of 10 respectively. Most participants describes Skintillates devices as something that they ``don't even feel after a while'' and ``feels very similar to a normal temporary tattoo'', and the 0.5mm-thick 0603 electronic parts as ``little bumps'' and do not significantly affect wearing comfort. When considering the battery connection, the wearing comfort of the display decreased to an average rating of 6.08/10. Participants were most bothered by the dangling battery connections and the hard coin cell battery. One out of ten Skintillate displays was damaged due to a strong tear and separation between the connection wires and the Skintillates device, and all the rest of the nine displays remained perfectly functional at the end of the study.
+
+Why did you take it home? How long did you keep it on. Who did you show it to. Did you have any public experience. How did you fit this into your daily life? 
+Every place: 
+Upper arm 
+During the course of wearing this, what else would you use it for. Sensing? 
+Would you wear this again. Would you wear this on a different location?  
+
+Skintillates was also invited to participate in the two-day exhibition of the National Maker Faire 2015. During which Skintillates LED displays powered by coin cell batteries were given out as part of the exhibit. The LED displays were customized to be a LED lit-up Maker Faire logo, as requested by the event organizer. Users mostly chose to wear the devices on the top of their arms and the outside of their lower legs. The devices were met with great enthusiasm and generated many inspiring conversations. \ignore{In particular, the displays worn by the event organizer led many Maker Faire participants and potential academic collaborators to visit our booth and offer application suggestions such as displays for events like Burning Man, medical electrodes for children, or custom motion controller for robots.} 
+
+
+
+
+
+\section {Discussion and limitation}
+\section {conclusion}
+I used $\cite{yamashita_enchanted_2013}$.
+
+I used \cite{acrobat}.
+
+\section{Acknowledgments}
+
+We thank CHI, PDC and CSCW volunteers, and all publications support
+and staff, who wrote and provided helpful comments on previous
+versions of this document.  Some of the references cited in this paper
+are included for illustrative purposes only.  \textbf{Don't forget
+to acknowledge funding sources as well}, so you don't wind up
+having to correct it later.
+
+% Balancing columns in a ref list is a bit of a pain because you
+% either use a hack like flushend or balance, or manually insert
+% a column break.  http://www.tex.ac.uk/cgi-bin/texfaq2html?label=balance
+% multicols doesn't work because we're already in two-column mode,
+% and flushend isn't awesome, so I choose balance.  See this
+% for more info: http://cs.brown.edu/system/software/latex/doc/balance.pdf
+%
+% Note that in a perfect world balance wants to be in the first
+% column of the last page.
+%
+% If balance doesn't work for you, you can remove that and
+% hard-code a column break into the bbl file right before you
+% submit:
+%
+% http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-
+% in-an-ieee-paper-if-using-bibtex
+%
+% Or, just remove \balance and give up on balancing the last page.
+%
 \balance
 
 \bibliographystyle{acm-sigchi}
-\bibliography{proxy}
+\bibliography{sample}
 \end{document}
-
-

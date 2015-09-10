@@ -5,10 +5,9 @@ Figures are made through omnigraffle.
 
 ### What is this repository for? ###
 
-Repo for the CHI paper. 
+Repo for the CHI Skintillates paper. 
 
 ### People ###
 * Joanne Lo
 * Cesar Torres
-* Wilmot Li
 * Eric Paulos
