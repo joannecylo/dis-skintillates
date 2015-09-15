@@ -125,7 +125,8 @@ The biocompatibility of on-skin wearable is extremely complicated and nuanced. F
 
 \section{Related Work}
 \subsection{Optical Projection}
-\subsection{polymer On-skin Overlay}
+\subsection{Polymeric On-skin Wearable}
+The flexibility of polymer makes it a great substrate for wearable electronics. Great advances have been made in many applications, including robotic skin that can detect the touch of a fly via capacitive sensing, fully-functional on-skin keypad, ultra-flexible sensing circuits that includes radio capability, and adaptive camouflage skin overlay. The thickness and relatively high modulus of polymeric wearable devices makes them rugged and highly reusable. Polymeric wearables are perfect for encapsulating complex electronics that would be hugely time consuming to remake after one or two times of usage. Unfortunately, the same properties that enable the reusability often makes polymeric wearable generally not highly breathable on skin without special device design. Moreover, to fabricate polymeric substrate that are uniformly thin for on-skin wearable applications, specialized equipment such as spinner and vacuum chamber, are often needed. Incorporating conductive materials, mainly through mixing conductive materials with nonconductive polymer and injecting liquid metal into prefabricated channels, are also not trivial in polymeric wearables. Mixing graphite into a polymeric carrier is a simple process, but the conductivity tends to be low. Liquid metal has relatively high conductivity, but its toxicity makes it difficult to be incorporated into on-skin wearable devices. These material limitations often makes customizing the visual appearance of polymeric wearables difficult as well. The first paper that presented a polymeric wearable device in the HCI community, iSkin, tackled this problem by cutting the black graphite-fictionalized conductive polymer into visually attractive patterns, thus cleverly turned the electrical layer into an aesthetically customizable layer. The limitation of this technique lies in the lack of control over the color of the conductive polymer, thus reducing the visual design freedom of the wearable devices. 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\columnwidth]{figures/Figure2}
@@ -135,12 +136,9 @@ The biocompatibility of on-skin wearable is extremely complicated and nuanced. F
 \end{figure}
 
 \subsection{Epidermal Electronics}
-Epidermal work done by John Rogers 
-the fabrication process of epidermal electronics require expensive cleanroom equipment – epidermal electronics generally involve extremely fine gold traces and electrodes (less than 1um) that are capable of resolving EEG signals with amplitude of 0.5V.
-temporary tattoo substrate was explored as a decorative covering in some of the work, but it was not used as the substrate for the electronics. 
-- PVA substrate as temporary support
-- Skintillates is inspired by…
+Human skin has natural wrinkles, creases, and pits that are on the order of \SI{15}{\micro\metre} to \SI{100}{\micro\metre}. If the wearable electronics have a thickness smaller or comparable to the natural skin features sizes, the wearer will not feel his/her skin unnaturally restrained. The Epidermal Sensor class refers to the class of sensors that are extremely thin, conform to small skin movements such as wrinkling, and present minimal obstructions to users’ skin sensations. Multifunction electronics, such as capacitive sensors that accurately detects physiological signals down to 0.5V, multilayer coils that enable on-skin RF communications, and strain and hydration sensors that aids in post-operation recovery. Materials that are structurally stronger, such as polymeric stamp, water-soluble PVA, or skin-safe stickers are used as a structural backing to transfer the ultra-thin epidermal electronics devices onto the user's skin. Once transferred, the ultra-thin Epidermal electronics (most less than \SI{60}{\micro\metre}), with low Young's modulus that matches with human skin, can be attached to skin through van der Waals force alone. 
 
+Despite these great scientific advances made by the development of epidermal electronics, the fabrication process makes them inaccessible to the general public. The flexibility of epidermal electronics enabled by the ultra-thin geometry that attaches to skin without substrate backing comes at the expense of complicated fabrication method and equipment. The fine gold traces and electrodes (down to \SI{1}{\micro\metre} in width), and the ultra-thin conductive and insulation layers (ranges from 500nm to 5\SI{}{\micro\metre}), though extremely sensitive and conformal to the human skin, requires highly specialized lithographic equipment and etching chemicals to fabricate. In one example application of Epidermal electronics, a small piece of temporary tattoo paper is used as a backing to transfer the epidermal device onto the user's skin. Unfortunately, the etching process that fabricates the fine gold traces is incompatible with commercially available tattoo paper because the paper cannot within the chemicals, thus resulting an additional transfer step. In this study, we aimed to develop a process that can be done without cleanroom equipment, without extreme temperature, but at the same time enable users to customize the device both electronically and aesthetically. 
 
 \section{Fabrication}
 \subsection{Material selection}
@@ -164,7 +162,7 @@ temporary tattoo substrate was explored as a decorative covering in some of the 
 \label{fig:figure4}
 \end{figure*}
 
-Similar to epidermal electronics, we aimed for an integrated-with-skin tattoo aesthetic in Skintiallates. The amplitude of signals that we expect Skintillates to be used with for HCI applications are much larger than the signal strength of what epidermal electronics experiences (down to 500uV). Additionally, the flexibility of epidermal electronics enabled by the ultra-thin geometry that attaches to skin without substrate backing comes at the expense of complicated fabrication method and equipment. 
+Similar to epidermal electronics, we aimed for an integrated-with-skin tattoo aesthetic in Skintiallates. The amplitude of signals that we expect Skintillates to be used with for HCI applications are much larger than the signal strength of what epidermal electronics experiences (down to 500uV). 
 
 With the aforementioned considerations in mind, we chose to directly screenprint the circuits and electronics onto commercially available inkjet printable temporary tattoo papers. The silver ink used in this study was CreativeMaterials 118-38 Screen-printable ink, and the temporary tattoo substrates used is Silhouette Inkjet Printable tattoo paper. Although the Skintillates devices, with conductive ink printed on top of temporary tattoo papers, are not as thin as epidermal electronics, it enables Makers to prototype on-skin interactive wearables with a much more accessible process. (Temporary tattoo papers are commonly used among crafters, it is therefore reasonable to assume that consumers find it acceptable to wear on skin although it’s not as conformable to skin as epidermal electronics.)(reword) Makers can inkjet print their own custom tattoo design, and screenprint the electronics with relatively inexpensive equipment. Screenprinting has also been shown to be able to create extremely fine and complicated electronic structures, and therefore this proposed fabrication method can be adapted by entry level to advanced Makers. 
 
@@ -284,12 +282,13 @@ Would you wear this again. Would you wear this on a different location?
 Skintillates was also invited to participate in the two-day exhibition of the National Maker Faire 2015. During which Skintillates LED displays powered by coin cell batteries were given out as part of the exhibit. The LED displays were customized to be a LED lit-up Maker Faire logo, as requested by the event organizer. Users mostly chose to wear the devices on the top of their arms and the outside of their lower legs. The devices were met with great enthusiasm and generated many inspiring conversations. In particular, the displays worn by the event organizer led many Maker Faire participants and potential academic collaborators to visit our booth and offer application suggestions such as displays for events like Burning Man, medical electrodes for children, or custom motion controller for robots.} 
 
 
+\section {Limitations}
 
 
+\section {Discussion and future applications}
 
-\section {Discussion and limitation}
 \section {conclusion}
-I used \cite{Kim:2015ii}.
+ \cite{Kim:2015ii}.
 
 
 
