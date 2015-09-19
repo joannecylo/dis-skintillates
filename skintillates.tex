@@ -103,25 +103,17 @@ Beyond phones, watches, and activity tracking devices, a new ecosystem of functi
 \category{H.5.m.}{Information Interfaces and Presentation (e.g. HCI)}{Miscellaneous}
 
 \section{Introduction}
-% Doris comments:
-% - a lot of the apostrophes in "user's" did not show up on the pdf. Not sure if its the way you're compiling on your end, but I could get it working on my side.
-% - you should use \ref{<name_of_label>} for your Figure labels so that the pdf will cross link the figures
-
-
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\columnwidth]{figures/Figure1}
 \caption{Skintillates is a tattoo interactive platform that can be fabricated with an accessible process.}
-\label{fig:figure1}
+\vspace{-8pt}
+\label{fig:overall}
 \end{figure}
-Everyday, we interact with the world through our skin. The human skin senses important events that happen closest to us, and serves as an expressive medium when adorned with tattoo art. In this paper, we present Skintillates, a class of temporary tattoo epidermal wearable interactive devices. %skintillates/skintillate plural/singular? 
-Skintillate devices presented in this paper include electronic tattoo as passive and active on-skin display, capacitive sensors for mobile devices electronic instrument control and strain gauge for posture detection. Similar to traditional tattoo%s
-, Skintillates can be customized to be a variety of different sizes and colors to fit the user's intended functions. Moreover, we demonstrate an accessible fabrication method that involves %all (awk)
+Everyday, we interact with the world through our skin. The human skin senses important events that happen closest to us, and serves as an expressive medium when adorned with tattoo art. In this paper, we present Skintillates, a class of temporary tattoo epidermal wearable interactive devices. Skintillate devices presented in this paper include electronic tattoo as passive and active on-skin display, capacitive sensors for mobile devices electronic instrument control and strain gauge for posture detection. Similar to traditional tattoos, Skintillates can be customized to be a variety of different sizes and colors to fit the user's intended functions. Moreover, we demonstrate an accessible fabrication method that involves %all (awk)
 all commercially-available materials and easy-to-obtain equipment. 
-Skintillates is inspired by a line of research in micron-thin epidermal electronics pioneered by material scientists.%you're not going to cite Rogers here?
- Since these epidermal electronics directly contacts the skin, they can be made into extremely accurate, yet comfortable, sensors. However, due to their intricate fabrication method, epidermal sensors remain to be a device mainly used in specialized medical and military applications. %However, due to their complex fabrication method, most epidermal sensors are reserved for specialized medical and military applications. 
-However, there is a clear need in the field of human-computer interactions for on-skin wearable electronics to enable a natural and always-available interactions with the electronics and data around us [cites]. %electronic devices and public space?
-In addition to giving commands using a wearable device, Skintillates can also serve as a programmable/addressable LED temporary tattoo display. %this seems to downplay the possible applications of skintillate as pertaining solely to these two categories. Maybe listing: sensors, LED display, interacting with other wearable devices.
+Skintillates is inspired by a line of research in micron-thin epidermal electronics pioneered by material scientists. Since these epidermal electronics directly contacts the skin, they can be made into extremely accurate, yet comfortable, sensors. However, due to their intricate fabrication method, epidermal sensors remain to be a device mainly used in specialized medical and military applications. However, due to their complex fabrication method, most epidermal sensors are reserved for specialized medical and military applications. There is a clear need in the field of human-computer interactions for on-skin wearable electronics to enable a natural and always-available interactions with the electronics and data around us [cites]. %electronic devices and public space?
+In addition to giving commands using a wearable device, Skintillates can also serve as a programmable/addressable LED temporary tattoo display. (Fig.\ref{fig:overall}) %this seems to downplay the possible applications of skintillate as pertaining solely to these two categories. Maybe listing: sensors, LED display, interacting with other wearable devices.
 
 Temporary tattoo is a natural platform for on-skin wearable. With the rich history of tattoo within the human culture, we can learn a few things from tattoos about some design parameters of on-skin wearable devices: 
 
@@ -135,150 +127,150 @@ The biocompatibility of on-skin wearable is extremely complicated and nuanced. F
 
 \section{Related Work}
 \subsection{Optical Projection}
+add if there is space
 \subsection{Polymeric On-skin Wearable}
-The flexibility of polymer makes it a great substrate for wearable electronics. Great advances have been made in many applications, including robotic skin that can detect the touch of a fly via capacitive sensing, fully-functional on-skin keypad, ultra-flexible sensing circuits that includes radio capability, and adaptive camouflage skin overlay. The thickness and relatively high modulus %maybe specifically say elastic/tensile modulus, it's not obvious what modulus you're refering to? 
-of polymeric wearable devices makes them rugged and highly reusable. Polymeric wearables are perfect for encapsulating complex electronics that would be hugely time consuming to remake after one or two times of usage. Unfortunately, the same properties that enable the reusability often makes polymeric wearable generally not highly breathable on skin without special device design. Moreover, to fabricate polymeric substrate that are uniformly thin for on-skin wearable applications, specialized equipment such as spinner and vacuum chamber, are often needed. Incorporating conductive materials, mainly through mixing conductive materials with nonconductive polymer and injecting liquid metal into prefabricated channels, are also not trivial in polymeric wearables. Mixing graphite into a polymeric carrier is a simple process, but the conductivity tends to be low. Liquid metal has relatively high conductivity, but its toxicity makes it difficult to be incorporated into %everyday 
-on-skin wearable devices. These material limitations often makes customizing the visual appearance of polymeric wearables difficult as well. The first paper that presented a polymeric wearable device in the HCI community, iSkin, tackled this problem by cutting the black graphite-fictionalized conductive polymer into visually attractive patterns, thus cleverly turned %turning
- the electrical layer into an aesthetically customizable layer. The limitation of this technique lies in the lack of control over the color of the conductive polymer, thus reducing the visual design freedom of the wearable devices. 
+The flexibility of polymer makes it a great substrate for wearable electronics. Great advances have been made in many applications, including robotic skin that can detect the touch of a fly via capacitive sensing, fully-functional on-skin keypad, ultra-flexible sensing circuits that includes radio capability, and adaptive camouflage skin overlay. The thickness and relatively high tensile modulus of polymeric wearable devices makes them rugged and highly reusable. Polymeric wearables are perfect for encapsulating complex electronics that would be hugely time consuming to remake after one or two times of usage. Unfortunately, the same properties that enable the reusability often makes polymeric wearable generally not highly breathable on skin without special device design. Moreover, to fabricate polymeric substrate that are uniformly thin for on-skin wearable applications, specialized equipment such as spinner and vacuum chamber, are often needed. Incorporating conductive materials, mainly through mixing conductive materials with nonconductive polymer and injecting liquid metal into prefabricated channels, are also not trivial in polymeric wearables. Mixing graphite into a polymeric carrier is a simple process, but the conductivity tends to be low. Liquid metal has relatively high conductivity, but its toxicity makes it difficult to be incorporated into everyday on-skin wearable devices. These material limitations often makes customizing the visual appearance of polymeric wearables difficult as well. The first paper that presented a polymeric wearable device in the HCI community, iSkin, tackled this problem by cutting the black graphite-fictionalized conductive polymer into visually attractive patterns, thus cleverly turning the electrical layer into an aesthetically customizable layer. The limitation of this technique lies in the lack of control over the color of the conductive polymer, thus reducing the visual design freedom of the wearable devices. 
 %this is a really long paragraph maybe chop it up into twos?
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\columnwidth]{figures/Figure2}
-\caption{A micrograph of the cross section of a \SI{36}{\micro\metre}-thick Skintillates device compared to a cross section of a piece of %human
+\caption{A micrograph of the cross section of a \SI{36}{\micro\metre}-thick Skintillates device compared to a cross section of a piece of human
 hair (\SI{110}{\micro\metre}).}
 \vspace{-8pt}
-\label{fig:figure2}
+\label{fig:micrograph}
 \end{figure}
+\begin{figure*} [!ht]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/Figure3}
+\caption{Application process.}
+\vspace{-8pt}
+\label{fig:applicationprocess}
+\end{figure*}
 
 \subsection{Epidermal Electronics}
-Human skin has natural wrinkles, creases, and pits that are on the order of \SI{15}{\micro\metre} to \SI{100}{\micro\metre}. If the wearable electronics have a thickness smaller or comparable to the natural skin features sizes, the wearer will not feel his/her skin unnaturally restrained. The Epidermal Sensor class refers to the class of sensors that are extremely thin, conform to small skin movements such as wrinkling, and present minimal obstructions to users’ skin sensations. %Does epidermal sensors class captalized intentionally?
-Multifunction electronics, such as capacitive sensors that accurately detect physiological signals down to 0.5V, multilayer coils that enable on-skin RF communications, and strain and hydration sensors that aids in post-operation recovery. %<-- Sentence Frag. This sentence is missing a verb or something?
+Human skin has natural wrinkles, creases, and pits that are on the order of \SI{15}{\micro\metre} to \SI{100}{\micro\metre}. If the wearable electronics have a thickness smaller or comparable to the natural skin features sizes, the wearer will not feel his/her skin unnaturally restrained. The Epidermal Sensor class refers to the class of sensors that are extremely thin, conform to small skin movements such as wrinkling, and present minimal obstructions to users’ skin sensations. Multifunction electronics, such as capacitive sensors that accurately detect physiological signals down to 0.5V, multilayer coils that enable on-skin RF communications, and strain and hydration sensors that aids in post-operation recovery. %<-- Sentence Frag. This sentence is missing a verb or something?
 Materials that are structurally stronger, such as polymeric stamp, water-soluble PVA, or skin-safe stickers are used as a structural backing to transfer the ultra-thin epidermal electronics devices onto the user's skin. Once transferred, the ultra-thin Epidermal electronics (most less than \SI{60}{\micro\metre}), with low Young's modulus %comparable to [that matches with]
  human skin, can be attached to skin through van der Waals force alone. 
 
-Despite these great%the impressive
- scientific advances made by the development of epidermal electronics, the fabrication process makes them inaccessible to the general public. The flexibility of epidermal electronics enabled by the ultra-thin geometry that attaches to skin without substrate backing comes at the expense of complicated fabrication method and equipment. The fine gold traces and electrodes (down to \SI{1}{\micro\metre} in width), and the ultra-thin conductive and insulation layers (ranges from 500nm to 5\SI{}{\micro\metre}), though extremely sensitive and conformal to the human skin, requires highly specialized lithographic equipment and etching chemicals to fabricate. In one example application of Epidermal electronics, a small piece of temporary tattoo paper is used as a backing to transfer the epidermal device onto the user's skin. Unfortunately, the etching process that fabricates the fine gold traces is incompatible with commercially available tattoo paper because the paper cannot %[missing verb] 
- within the chemicals, thus resulting an additional transfer step. In this study, we aimed to develop a process that can be done without cleanroom equipment, without
+Despite these the impressive scientific advances made by the development of epidermal electronics, the fabrication process makes them inaccessible to the general public. The flexibility of epidermal electronics enabled by the ultra-thin geometry that attaches to skin without substrate backing comes at the expense of complicated fabrication method and equipment. The fine gold traces and electrodes (down to \SI{1}{\micro\metre} in width), and the ultra-thin conductive and insulation layers (ranges from 500nm to 5\SI{}{\micro\metre}), though extremely sensitive and conformal to the human skin, requires highly specialized lithographic equipment, high temperature metal deposition, and etching chemicals to fabricate. In one example application of Epidermal electronics, a small piece of temporary tattoo paper is used as a backing to transfer the epidermal device onto the user's skin. Unfortunately, the etching process that fabricates the fine gold traces is incompatible with commercially available tattoo paper because the paper cannot withstand the chemicals, thus resulting an additional transfer step. In this study, we aimed to develop a process that can be done without cleanroom equipment, without
  extreme temperature, but at the same time enable users to customize the device both electronically and aesthetically. 
-% In this study, we develop a fabrication process without the need of cleanroom equipment or the extreme temperatures, but at the same time enable users to customize the device both electronically and aesthetically. %[Also you never really talk about extreme temperatures anywhere, I'm guessing this is for the liquid metals?]
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{figures/Figure4}
+\caption{An illustration of the different layers of a basic Skintillate device.}
+\vspace{-8pt}
+\label{fig:layers}
+\end{figure}
  
 
 \section{Fabrication}
 \subsection{Material selection}
 \begin{enumerate}
   \item The substrate has to be easily customizable to enable artistic expression with the temporary tattoo.
-  \item The electronic has to be conductive enough to support basic functions. %[basic functions? or sensitive /sensor measurements?]
+  \item The electronic has to be conductive enough to support basic functions for human computer interactions applications. 
   \item The tattoo must be easily applicable, stay on skin for a reasonable amount of time, and removable.
 \end{enumerate}
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.9\columnwidth]{figures/Figure3}
-\caption{An illustration of the different layers of a basic Skintillate device.}
-\label{fig:figure3}
-\end{figure}
 
-\begin{figure*}[!b]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/Figure4}
-\caption{With Caption Below, be sure to have a good resolution image
-  (see item D within the preparation instructions).}
-\label{fig:figure4}
-\end{figure*}
+
+
 
 Similar to epidermal electronics, we aimed for an integrated-with-skin tattoo aesthetic in Skintiallates. The amplitude of signals that we expect Skintillates to be used with for HCI applications are much larger than the signal strength of what epidermal electronics experiences (down to 500$\mu$V). 
 %Given these design constraints,
-With the aforementioned considerations in mind, we chose to directly screenprint the circuits and electronics onto commercially available inkjet printable temporary tattoo papers. The silver ink used in this study was CreativeMaterials 118-38 Screen-printable ink, and the temporary tattoo substrates used is Silhouette Inkjet Printable tattoo paper. Although the Skintillates devices, with conductive ink printed on top of temporary tattoo papers, are not as thin as epidermal electronics, it enables Makers to prototype on-skin interactive wearables with a much more accessible process. (Temporary tattoo papers are commonly used among crafters, it is therefore reasonable to assume that consumers find it acceptable to wear on skin although it’s not as conformable to skin as epidermal electronics.)(reword) Makers can inkjet print their own custom tattoo design, and screenprint the electronics with relatively inexpensive equipment. Screenprinting has also been shown to be able to create extremely fine and complicated electronic structures, and therefore this proposed fabrication method can be adapted by entry-level to advanced Makers. %suitable for Makers of all skill levels and ages.
+With the aforementioned considerations in mind, we chose to directly screenprint the circuits and electronics onto commercially available inkjet printable temporary tattoo papers. The silver ink used in this study was CreativeMaterials 118-38 Screen-printable ink, and the temporary tattoo substrates used is Silhouette Inkjet Printable tattoo paper. Although the Skintillates devices, with conductive ink printed on top of temporary tattoo papers, are not as thin as epidermal electronics, it enables Makers to prototype on-skin interactive wearables with a much more accessible process. (Temporary tattoo papers are commonly used among crafters, it is therefore reasonable to assume that consumers find it acceptable to wear on skin although it’s not as conformable to skin as epidermal electronics.)(reword) Figure\ref{fig:micrograph} shows that a basic Skintillates device, which contains the tattoo substrate and a conductive layer, is approximately 36\SI{}{\micro\metre}, which is thinner than an average human hair. Makers can inkjet print their own custom tattoo design, and screenprint the electronics with relatively inexpensive equipment. Screenprinting has also been shown to be able to create extremely fine and complicated electronic structures, and therefore this proposed fabrication method suitable for Makers of all skill levels and ages.
 
-Due to the need to make a large number of Skintillates display and sensors in this project, we fabricated almost all of the Skintillates devices by screen-printing conductive ink. We have successfully created these devices with %both 
-conductive inkjet printing and conductive pens, but we will focus on the screen-print method in this paper. 
+Due to the need to make a large number of Skintillates display and sensors in this project, we fabricated almost all of the Skintillates devices by screen-printing conductive ink. We have successfully created these devices with both conductive inkjet printing and conductive pens, but we will focus on the screen-print method in this paper. 
 
-\subsection{Fabrication Process}
+\subsection{Fabrication and Application Process}
 
 \begin{enumerate}
-  \item Design an art layer (nonconductive) %nonconductive, art layer 
-   with a graphic design tool of choice. Design the circuit and/or sensors to be screen-printed as the conductive layer.
+  \item Design a nonconductive art layer with a graphic design tool of choice. Design the circuit and/or sensors to be screen-printed as the conductive layer. (Figure\ref{fig:applicationprocess}a)
   \item Use an inkjet printer to print the art layer design onto the tattoo substrate (still attached to the paper backing). 
   \item Cut a negative mask with vinyl cutter for screen-printing the conductive layer. 
   \item Apply vinyl mask onto the silkscreen. 
-  \item Screen-print the circuit and/or sensors using the silver screen-printing ink.
+  \item Screen-print the circuit and/or sensors using the silver screen-printing ink.(Figure\ref{fig:applicationprocess}b)
   \item Let the ink dry in ambient temperature for 3-4 hours or 10 minutes in an oven at 100$^{\circ}$C. 
   \item Mount electronics onto the circuit using z-conductive tape at appropriate locations if needed.   
+  \item Apply the adhesive layer that contains in the temporary tattoo paper package. 
+  \item Put the Skintillate device on the desired body location. Wet and lift the paper backing (Figure\ref{fig:applicationprocess}c)
 \end{enumerate}
-LED's and resistors of the surface mount 0603 package, which has thickness of  \SI{500}{\micro\metre}, was used throughout this study to minimize increase in thickness in locations where electronics are mounted. Increased complexity in electrical functionality and aesthetic design could be achieved by using deviations of this basic fabrication method. The specific changes will be discussed in the application section. 
+An illustration of the Skintillates layers is shown Figure\ref{fig:layers}. in LED's and resistors of the surface mount 0603 package, which has thickness of  \SI{500}{\micro\metre}, was used throughout this study to minimize increase in thickness in locations where electronics are mounted. Increased complexity in electrical functionality and aesthetic design could be achieved by using deviations of this basic fabrication method. The specific changes will be discussed in the application section. 
 
 \subsection{Designing the Visual Appearance of Skintillates}
 explain how covering/or not the conductive layer
 
 \section{Example Applications}
 \subsection{On-skin Display}
-\begin{figure}[!h]
+\begin{figure}
 \centering
 \includegraphics[width=1\columnwidth]{figures/Figure5}
 \caption{Example of Skintillates tattoo displays}
-\label{fig:figure5}
+\vspace{-8pt}
+\label{fig:displays}
 \end{figure}
 One of the most important aspect of wearing tattoos, either temporary or permanent, is to express personal identity. 
-Skintillates aims to augment the self-expression of tattoo artwork with electronics. 
-In this paper, we present a few examples that we imagine Skintillates to make a useful tattoo display. 
-In Figure 5, we show a few examples of decorative Skintilaltes public and private displays. Figure 5a shows a simple dragon tattoo with red LED eyes. The Skintillate dragon tattoo is electrically connected to the watch, and could potentially serve as a point-light display for a smart watch. Figure 5b demonstrates a back tattoo with LED’s that flash with music. The tattoo is controlled by an Arduino hidden under the wearer’s clothing. In this example, we also briefly explored the aesthetic of electronically functionally components on the tattoo. The power pads, which are traditionally circular or square in shape in printed circuit boards, are designed to look like wings to fit with the aesthetic of the art layer of the tattoo. 
-In Figure 5c-d, we investigated the potential of using Skintillates as a private wearable display for intimate bio-data. We downloaded two sets of publically available test electrocardiogram (ECG) signals from PhysioNet to simulate the heartbeats from two people. In real-life setting, the Skintillates bio-data display can be interfaced with many of the biomonitoring wearable devices in the market to obtain the data. %In real-life applications, the Skintillates bio-data display can interface with biomonitoring data from commercially available wearable devices. 
-The LEDs are programmed to blink as the signal strength reaches a certain amplitude (Figure 5c). In Figure 5d, the user wore the Skintillate display under a jacket, which he/she can lift and glance at the private display when desired. %Fig 5d to be added?
+Skintillates aims to augment the self-expression of tattoo artwork with electronics. In Figure \ref{fig:displays}, we show a few examples of decorative Skintilaltes public and private displays. Figure 5a shows a simple dragon tattoo with red LED eyes. Figure \ref{fig:displays}a shows a Skintillate dragon tattoo that is electrically connected to the watch, and could potentially serve as a point-light display for a smart watch. Figure \ref{fig:displays}b demonstrates a back tattoo with LED’s that flash with music, which is controlled by an Arduino hidden under the wearer’s clothing. In this example, we also briefly explored the aesthetic of electronically functionally components on the tattoo. The power pads, which are traditionally circular or square in shape in printed circuit boards, are designed to look like wings to fit with the aesthetic of the art layer of the tattoo. 
+In Figure \ref{fig:displays}c, we investigated the potential of using Skintillates as a private wearable display for intimate bio-data. We downloaded two sets of publically available test electrocardiogram (ECG) signals from PhysioNet to simulate the heartbeats from two people. In real-life applications, the Skintillates bio-data display can interface with biomonitoring data from commercially available wearable devices. The LEDs are programmed to blink as the signal strength reaches a certain amplitude, mimicking two heartbeats. The user wore the Skintillate ECG display under a shirt, which he/she can lift and glance at the private display when desired. In Figure \ref{fig:displays}d, we explore the possibility of incorporating Skintillate display with an existing tattoo. We omitted the art layer in this device and trace one of the tree branches with the silver ink to power three LED's to light up the tattoo flowers. 
 
 \subsection{Multi-layer Display}
-\begin{figure}[!h]
+\begin{figure}
 \centering
 \includegraphics[width=1\columnwidth]{figures/Figure6}
 \caption{Multilayer Display}
-\label{fig:figure6}
+\vspace{-8pt}
+\label{fig:multilayer}
 \end{figure}
-Multilayer devices can be fabricated for aesthetic or electronic purposes. (Figure 6) In printed circuit board design, multiple layers are often needed to achieve desired form and function. Epidermal electronics have also explored using multilayer device to support more complicated function. In arts practices, layers are often used as a mean to create dimensions (it's an established interactive paradigm for digital design (ask mira) hierarchical design that separate layers and elements). In order to fully explore combining arts and electronics on a wearable device, the Skintillates fabrication should be able to support electronic function and aesthetically attractive multi-layer devices.  
+
+\begin{figure*}
+\centering
+\includegraphics[width=1\textwidth]{figures/Figure7}
+\caption{Capacitive touch sensing}
+\vspace{-8pt}
+\label{fig:capacitive}
+\end{figure*}
+Multilayer devices can be fabricated for aesthetic or electronic purposes. In printed circuit board design, multiple layers are often needed to achieve desired form and function. Epidermal electronics have also explored using multilayer device to support more complicated function. In arts practices, layers are often used as a mean to create dimensions. In order to fully explore combining arts and electronics on a wearable device, the Skintillates fabrication process should be able to support electronic function and aesthetically attractive multi-layer devices. Figure \ref{fig:multilayer}a shows an exploded view of a multilayer Skintillates device. In this study, we created a second conductive layer, but the same procedure could be used for creating a second art layer. A second layer was screen printed on a separate temporary tattoo substrate, and was released from the paper backing onto the first conductive layer. In order to electrically connect the first and second conductive layers, we created vias by cutting holes in the substrate at appropriate locations. Figure \ref{fig:displays}b shows a closed-up image of the dual-layer Skintillate device. The top layer traces are insulated from the bottom layer traces with a tattoo layer substrate, and vias are opened at the end of the traces to allow the LED's to make contact with both sets of the traces. Although the multilayer Skintillates devices are thicker than the single layer devices, they remain reasonably flexible on skin. In figure\ref{fig:displays}c, we show that the dual-layer Skintillates device remain operational even when the traces are being compressed with the skin. 
+
 
 \subsection{Sensing}
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.8\textwidth]{figures/Figure7}
-\caption{Capacitive touch sensing}
-\label{fig:figure7}
-\end{figure*}
-Advanced sensing, including capacitive sensing, using epidermal devices is well-established. In many research studies, various algorithms, data processing methods, and grounding schemes are utilized to overcome any technical difficulties usually associated with wearable sensing. In this paper, we would like to present Skintillates sensors as devices that can be used with interfacing electronics popular amongst makers, the MakeyMakey and the Arduino. Through careful material selections, we can achieve sensitivity suitable for common interactive applications. As mentioned in the Fabrication section, the silver screen printing ink (or most of the silver ink on the market) is very conductive (0.5$\Omega/\square$). %[I thought this square thing was a symbol that didn't show up, is this the conventional way of denoting conductivity? or $cm^2$?]
+
+Advanced sensing, including capacitive sensing, using epidermal devices is well-established. In many research studies, various algorithms, data processing methods, and grounding schemes are utilized to overcome any technical difficulties usually associated with wearable sensing. In this paper, we would like to present Skintillates sensors as devices that can be used with interfacing electronics popular amongst makers, the MakeyMakey and the Arduino. Through careful material selections, we can achieve sensitivity suitable for common interactive applications. As mentioned in the Fabrication section, the silver screen printing ink (or most of the silver ink on the market) is very conductive (0.5$\Omega/\square$). 
  The high conductivity is important in resistive switch design, where the touched surface needs to be conductive enough to close the switch; it is also pertinent in capacitor design, where the availability of charge directly affects the sensitivity of the capacitive button (Gauss’s law=$\frac{\sigma}{\epsilon}$). In the following sections, we will go through a few sensing examples using the Skintillates devices. 
 
 \subsection {Capacitive touch}
 
-Capacitive sensing is ubiquitous in interaction design - from sensing gestures to sensing direct touch, %to? [awk]
-the change in electric field carries rich information about the space around us. In this paper, we present Skintillates capacitive buttons that can be used to control mobile devices. To ensure reliable performance of the capacitive sensor, both the electronic filtering and the physical device insulation have be carefully designed. The raw data of the capacitive sensor is shown in Fig xa %[huh, which Figure?]
-, from which the signal is then processed and filtered by the Adafruit Capacitive Touch Sensor Breakout MPR121 connected to an Arduino Uno. To insulate the capacitive sensor against the skin where it is attached, we modify the fabrication steps slightly by adding two layers of temporary tattoo substrates on top of the conductive electrodes. (make figures to describe this)
+Capacitive sensing is ubiquitous in interaction design - from sensing gestures to sensing direct touch, the change in electric field carries rich information about the space around us. In this paper, we present Skintillates capacitive buttons that can be used to control mobile devices. To ensure reliable performance of the capacitive sensor, both the electronic filtering and the physical device insulation have be carefully designed. The raw data of the capacitive sensor is processed and filtered by the Adafruit Capacitive Touch Sensor Breakout MPR121 connected to an Arduino Uno. To insulate the capacitive sensor against the skin where it is attached, we modify the fabrication steps slightly by adding insulative temporary tattoo substrates without any silver conductive ink on top of the conductive electrodes. This insulative layer prevent the charges on the surface of the skin to interfere with capacitive touch signal (Fig.\ref{fig:displays}a). In this paper, we demonstrated the capacitive buttons by using them as custom controls for various music and social applications for a mobile phone. The capacitive buttons interfaces with the mobile phone via an Arduino and a JY-MCU bluetooth module. By placing the Skintillates in the inside of the user's arm (Fig\ref{fig:displays}b), he/she can control the mobile applications on an easily accessible body location (Fig\ref{fig:displays}c). The size and shape of the Skintillates buttons are highly customizable, enabling visual design freedom - such as creating buttons with shapes that represent the application being controlled, and electronic design freedom - such as capacitive sliders and wheels. 
+
 \subsection {On-skin Resistive Sensor}
-%[can you remove the orangey reddish hue on the pictures in Fig 8 ?]
-\begin{figure}[!h]
+\begin{figure}
 \centering
 \includegraphics[width=1\columnwidth]{figures/Figure8}
 \caption{Example of Skintillates tattoo displays}
+\vspace{-8pt}
 \label{fig:figure8}
 \end{figure}
-Using the human body as a conductor to form a closed circuit to turn on a light is common science experiment, and this sensing method %can 
-also enable interesting interactions - such as turning bananas into switches - made popular by MakeyMakey.  %serve as unusual medium of interactions such as MakeyMakey's ``bannana switches"
- We demonstrated that Skintillates can be used as a resistor sensor that is compatible with MakeyMakey. The construction of the Skintillates resistor sensor is very similar to that of the capacitive sensor - two layers of tattoo substrates are used as an insulative layer beneath the electrode to prevent electrically connection between the sensor and the skin that it is attached to. Figure 8a shows two Skintillates sensors shaped as kites, which are connected to the MakeyMakey to act as the left and right arrow of a computer keyboard. The custom buttons are then used as a controller to play a computer game of moving the kite up and down to avoid hitting objects in the sky. 
+Using the human body as a conductor to form a closed circuit to turn on a light is common science experiment, and this sensing method can also enable interesting interactions - such as turning bananas into switches - made popular by MakeyMakey. We demonstrated that Skintillates can be used as a resistor sensor that is compatible with MakeyMakey. The construction of the Skintillates resistor sensor is very similar to that of the capacitive sensor, with an insulative layer beneath the electrode to prevent electrically connection between the sensor and the skin that it is attached to. Figure 8a shows two Skintillates sensors shaped as kites, which are connected to the MakeyMakey to act as the left and right arrow of a computer keyboard. The custom buttons are then used as a controller to play a computer game of moving the kite up and down to avoid hitting objects in the sky. A huge library and community support are available for prototyping with MakeyMakey, and the Skintillates resistive sensor can be used to enable a wide range of wearable interactions. 
 \subsection {Strain Gauge}
-\begin{figure*}[!h]
+\begin{figure*}
 \centering
 \includegraphics[width=1.0\textwidth]{figures/Figure9}
 \caption{Strain gauge for posture sensing}
+\vspace{-8pt}
 \label{fig:figure9}
 \end{figure*}
-The subtle analog motions of the human body carries information that goes beyond the digital on/off button. The Skintillates strain gauge captures the fluid motion of the human body by translating the movement into a variable resistance. %[I think "fluid motion" gives the wrong connotation, when one first reads this, like its tracking bodily fluids or something.]Skintillates strain gauge captures the full range of human motion by translating muscle movements into a variable resistance. 
- The strain gauge has a longer length in the direction of the wrist bending during typing. As the sensor stretches with the wrist, the resistance becomes higher proportionally. The change in resistance is detected through a wheat stone bridge and amplified using the INA125P operational amplifier. Before amplification, the variation in the resistance ranges from 37$\Omega$(when wrist is flat) to 54$\Omega$ (The amplified analog value is read using an Arduino Uno and transmitted to a mobile phone via bluetooth. %[This bracket was never ended..]
- The analog value is displayed on the screen of the mobile phone, and the appropriate warning messages are displayed as the user’s wrist posture change. Although the strain gauge is applied on the wrist in this example, similar application can also be used for back posture by placing the sensor on the neck (Figure 7c). In addition to posture detection, Skintillates strain gauge can be as an %can serve as an 
- always-available sensor to detect different gestures for electronic interactions or be incorporated into performance art. 
-%[For all the applications, should we say that this is a proof of concept for other more complex stuff?]
+The subtle analog motions of the human body carries information that goes beyond the digital on/off button. The Skintillates strain gauge captures the fluid motion of the human body by translating the movement into a variable resistance. %[I think "fluid motion" gives the wrong connotation, when one first reads this, like its tracking bodily fluids or something.]Skintillates strain gauge captures the full range of human motion by translating muscle movements into a variable resistance. Valid, but I like the image of "fluid motion". Let me think about this more.
+ The strain gauge has a longer length in the direction of the wrist bending during typing. As the sensor stretches with the wrist, the resistance becomes higher proportionally. The change in resistance is detected through a wheat stone bridge and amplified using the INA125P operational amplifier. Before amplification, the variation in the resistance ranges from 37$\Omega$(when wrist is flat) to 54$\Omega$ The amplified analog value is read using an Arduino Uno and transmitted to a mobile phone via bluetooth. 
+ The value is then displayed on the screen of the mobile phone, and the appropriate warning messages are displayed as the user’s wrist posture change. Although the strain gauge is applied on the wrist in this example, similar application can also be used for back posture by placing the sensor on the neck (Figure 7c). In addition to posture detection, Skintillates strain gauge can serve as an always-available sensor to detect different gestures for electronic interactions or be incorporated into performance art. 
+
 \section {User Study}
-In an user study, we asked ten voluntary participants (Fig x, mean age 29.7) to each wear a Skintillates LED display powered with a temporary without any circuit or sensing elements, a 3.3V coin cell battery, and a resistive sensor on a body location of their choice for the duration of a work day, which ranges from 8 to 10 hours. One participant, R7, has a permanent tattoo on upper arm. During which they performed their normal work functions, which mostly includes office activities such as typing, writing, and manipulating light machinery. At the end of the study, participants were asked to rate the wearing comfort of the Skintillates display and imagine the difference personal uses of Skintillates. The Skintillates displays and resistive sensors were all tested at the end of the work day to assess its durability. After the survey, participants were free to remove or keep wearing the Skintillates devices. 
+In order to study the user experience of the Skintillates devices, we recruited 10 participants (mean age 29.7) to each wear 1) a Skintillate display measures 6.5 in x 1.0 in and connected to a 3.3V coin cell battery, 2) a Skintillate resistive sensor measures 1.3 in x 0.8 in, and 3) two temporary tattoo without any conductive layer as controls. Participants were free to apply the Skintillates devices on a body location of their choice with the restriction of placing the control tattoos close to the display and the sensor,  and they were asked to wear the devices for the duration of a work day (ranges from 8-10 hours). During which they performed their normal work functions, which mostly includes office activities such as typing, writing, and manipulating light machinery. At the end of the work day, participants were surveyed about their qualitative and quantitative opinions about the Skintillates devices. The functionality of Skintillates devices were tested to assess durability and participants were free to choose whether they want to keep wearing the devices. On the next day, participants were given another survey about the social aspect of Skintillates.
 
-Participants were asked to rate the wearing comfort of the Skintillate display with and without consideration of the battery connection (i.e. copper tape connected to the battery). (have them wear a normal one and rate, this is one more tattoo that i made.) Without considering the battery connection, the wearing comfort of the Skintillates display and resistive sensor have an average rating of 8.21 and 8.76 out of 10 respectively. Most participants describes Skintillates devices as something that they ``don't even feel after a while'' and ``feels very similar to a normal temporary tattoo'', and the 0.5mm-thick 0603 electronic parts as ``little bumps'' and do not significantly affect wearing comfort. When considering the battery connection, the wearing comfort of the display decreased to an average rating of 7.08/10. Participants were most bothered by the dangling battery connections and the hard coin cell battery. One out of ten Skintillate displays was damaged due to a strong tear and separation between the connection wires and the Skintillates device, and all the rest of the nine displays remained perfectly functional at the end of the study.
 
-The majority of the users chose to put the Skintillates devices on their arms, while one user placed the Skintillates display on the back of the neck. (We realize the limitation of this study was that different locations of the skin have different nerve endings and can affect the comfort level. This just shows that this the common locations that we found in this study.) (the elongated shape - potentially less comfortable) When asked about their decision of the placement of the Skintillates devices, users cited the shape of the Skintillates devices and their outfit of the day to be the main drivers. In the follow up survey, user were asked about how long they kept wearing the Skintillates devices. All of the participants (8 out of 10) who have plans to interact with friends and family after the work day kept wearing the tattoo after the study so that they can show the Skintillates devices to their loved ones - ``I wanted to keep it because I thought my kids would think that this is the coolest thing ever''. Two of the participates mentioned that although he/she did not have prior plans to go out after work that night, they decided to go to a public place (one to a restaurant for take-out, and one to a sports bar) to show off the Skintillates display. R7, who went to a sports bar to show off the tattoo, reported ``it seems to be a waste not to show this to someone''. 
+The majority of the users chose to put the Skintillates devices on their arms, while one user placed the Skintillates display on the back of the neck. When asked about their decision of the placement of the Skintillates devices, users cited the shape of the Skintillates devices and their outfit of the day to be the main drivers. In the follow up survey, user were asked about how long they kept wearing the Skintillates devices after they were given the choice to take them off. All of the participants (8 out of 10) who have plans to interact with friends and family after the work day kept wearing the tattoo after the study so that they can show the Skintillates devices to their loved ones - ``I wanted to keep it because I thought my kids would think that this is the coolest thing ever''. Two of the participates mentioned that although he/she did not have prior plans to go out after work that night, they decided to go to a public place (one to a restaurant for take-out, and one to a sports bar) to show off the Skintillates display. R7, who went to a sports bar to show off the tattoo, reported ``it seems to be a waste not to show this to someone''. When asked to imagine potential applications that they would like to use the Skintillates devices for, many applications were around instant and unexpected interactions with their surrounding electronics (``a henna tattoo that can control everything in my house'', ``tattoo buttons that make people massage my back when they need to turn on the light'', ``control things with Spiderman gesture''), decorative body display (``put some evil red eyes on my skull (permanent) tattoo'', ``burning man costume''), and functional body display (``turning signal for motorcyclists'', ``a red/green light for when I want to be bothered by coworkers''). 
 
-All participants reported that they would like to wear the Skintillates device again, as well as express desires to design their own Skintillates displays and sensors. R7 would like to overlay his/her existing permanent tattoo with Skintillate LED displays and sensors. Although all of the participants took off the Skintillates devices before showering or going to bed, all of them said that they took the devices off very carefully as to not damage them. In particular, all of the participants kept the display devices for reuse. 
+Participants were asked to rate the wearing comfort of the Skintillate display with and without consideration of the battery connection (i.e. copper tape connected to the battery). The authors recognize the limitation of this study was that different locations of the skin have different nerve endings and can affect the comfort level - however, we were more interested in learning how users would use the Skintillates devices on a body location of their choice in this study. The wearing comfort of the control temporary tattoo 9.1/10. Without considering the battery connection, the wearing comfort of the Skintillates display and resistive sensor have an average rating of 8.2 and 8.8 out of 10 respectively. Most participants describes Skintillates devices as something that they ``don't even feel after a while'' and ``feels very similar to a normal temporary tattoo'', and the small 0.5mm-thick 0603 electronic parts as ``little bumps'' and do not significantly affect wearing comfort. When considering the battery connection, the wearing comfort of the display decreased to an average rating of 7.1/10. Participants were most bothered by the battery connections and the hard coin cell battery. One out of ten Skintillate displays was damaged due to a strong tear and separation between the connection wires and the Skintillates device, and all the rest of the nine displays remained perfectly functional at the end of the study.
+
+All participants reported that they would like to wear the Skintillates device again, as well as express desires to design their own Skintillates displays and sensors. Although all of the participants took off the Skintillates devices before showering or going to bed, all of them said that they took the devices off very carefully as to not damage them. In particular, all of the participants kept the display devices for reuse. 
 
 \ignore{potentially interesting descriptions of the resistive sensor: 
 it's like your skin can control things in the house 
@@ -289,7 +281,7 @@ make a spider man thing
 let's put the sensor on your neck - let's put a bone conduction microphone on the back of your neck (omg how engineer is this)
 
 potentially interesting descriptions of the display: 
-got nothing for ya. we are all boring nerds that are close to describing the package of the LED's. A lot of us are also married/going out with scientists/engineers. 
+
 potentially interesting application of the display: 
 make the display a turn signal for motorcyclists
 Burning man! (i'm going to die if i get one more burning man comment)
@@ -303,11 +295,6 @@ In a few of the conversations about the Skintillate devices in which the partici
 
 }
 
-
-
-
-
-
 \ignore{Why did you take it home? How long did you keep it on. Who did you show it to. Did you have any public experience. How did you fit this into your daily life? 
 Every place: 
 Upper arm 
@@ -320,11 +307,13 @@ Skintillates was also invited to participate in the two-day exhibition of the Na
 \section {Limitations}
 Although Skintillates provides tremendous new features and benefits to creating novel wearable electronics, there are several limitations. First, although the Skintillates device is highly flexible, the electrical connection, currently made with copper tape, is not. In additional to creating discomfort, the difference in material  properties causes the electrical connection to be the mechanically weakest point of the device. This problem can be overcome by stabilizing the connection using a small piece of medical-grade tape - the tape relieve most of the stress exert on the connection and prevent tearing of the connection. In future work, we would like to develop a flexible electrical connector that can move with the skin and provide an electrical interface with the Skintillate device. 
 
-Another limitation lies in the reusability of the Skintillates devices. In the research team's experience, the Skintilltaes devices can be reused at least four to five times if the devices contains finely traced (<2mm) circuits and many more times if the for sensors with large conductive patches. The reusability of the devices could potentially be improved with a thin (<10um) spray-on encapsulating layer. Further studies can also be performed to optimize the electronic design for durability. 
+Another limitation lies in the reusability of the Skintillates devices. In the research team's experience, the Skintilltaes devices can be reused at least four to five times if the devices contains finely traced (\textless 2mm) circuits and many more times if the for sensors with large conductive patches. The reusability of the devices could potentially be improved with a thin (<10um) spray-on encapsulating layer. Further studies can also be performed to optimize the electronic design for durability. 
 
 \section {Discussion and future applications}
+The development of Skintillates has significant impact in customizable flexible and wearable electronics and their applications. The simple fabrication process of Skintillates provide an alternative to prototyping with 3D printing or polymer casting and curing.  The design freedom, in terms of electronic, functionality, and visual aesthetic, of Skintillates can support a diverse ecosystem of users from diverse backgrounds, including engineers, designers, and artists. We plan to continue investigating creating more complex interactive electronics on Skintillate devices and studying how these devices can blend artfully and seamlessly into people's daily lives. Moreover, we would like to explore the possibility of incorporating Skintillates displays and sensors into performance arts. 
 
 \section {conclusion}
+
  \cite{Kim:2015ii}.
 
 
