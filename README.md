@@ -9,5 +9,4 @@ Repo for the CHI Skintillates paper.
 
 ### People ###
 * Joanne Lo
-* Cesar Torres
 * Eric Paulos
